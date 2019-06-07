@@ -1,0 +1,343 @@
+hostname
+ping 172.31.84.7
+cls
+clear
+sudo yum -y install git
+git
+git clone https://github.com/rajkumar0579/webapp.git
+cd webapp
+cd webapp/
+ls -la
+git status
+git add index.html
+git status
+git commit -m "First commit"
+git config --global user.name "Raj"
+git status
+history
+g
+cd webapp/
+git push
+cls
+clear
+git push
+git log
+git branch -b
+git branch -v
+git branch test
+git branch dev
+git branch -v
+git checkout dev
+git branch -v
+git add *
+git commit -m "Test branch commit"
+git add *
+git commit -m "Test branch commit"
+git branch -c
+git branch -v
+clear
+git checkout test
+git merge dev
+git branch -v
+git add *
+git commit -m "Test branch"
+git branch -v
+git checkout dev
+git add *
+git commit -m "dev branch"
+git branch -v
+git merge test
+git commit -m merge
+git commit -m "merge"
+git add *
+git commit -m "merge"
+git branch -v
+git log
+git branch -v
+git remote -v
+git push --set-upstream origin dev:webdev-1.0
+git add *
+git commit -m "local"
+git push --set-upstream origin dev:webdev-1.0
+git pull origin webdev-1.0
+git brabch -v -all
+git branch -v -all
+git branch -v --all
+git add *
+git commit -m "dev2 merge"
+git push --set-upstream origin dev:webdev-1.0
+history
+sudo yum -y install java-1.8.0-openjdk.x86_64
+sudo yum -y remove java-1.7.0-openjdk
+sudo wget -O /etc/yum.repos.d/jenkins.repo
+$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+$sudo  rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+$sudo  rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+sudo  rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+sudo yum install -y  jenkins
+RHEL 7/Centos 7
+sudo systemctl start jenkins
+sudo service jenkins start
+sudo chkconfig jenkins on
+sudo service jenkins status
+http://your-ip-address:8080
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+git add
+git add*
+cd webdev1.0
+cd webapp/
+git add*
+git add *
+git commit -m
+git commit -m "web push"
+git push --set-upstream origin dev:webdev-1.0
+df -h .
+sudo service jenkins restart
+cdcd environment
+cd
+cd environment
+wget http://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz
+tar xzvf apache-maven-3.5.4-bin.tar.gz
+sudo mv apache-maven-3.5.4 /usr/local
+sudo yum -y install java-1.8.0-openjdk-devel
+/usr/local/apache-maven-3.5.4/bin/mvn
+cd webdeploy
+cd
+cd jenkins
+ls - ld
+ls -ld
+cd ec2-user
+cd /var/lib
+ls -la
+cd jenkins/
+ls -la
+history
+cd
+cd environment/
+sudo yum -y install ansible
+ansiple-playbook
+ansiple -playbook
+chmod 600 webkey.pem
+pwd
+sudo vi /etc/ansible/ansible.cfg
+ansible -i ansiblehosts -m ping webservers
+sudo vi /etc/ansible/ansible.cfg
+ansible-playbook -i ansiblehosts
+ansible-playbook -i ansiblehosts web.yaml
+history
+clear
+ansible-playbook -i ansiblehosts web.yaml
+sudo pi install boto boto3 botocore
+sudo pip install boto boto3 botocore
+ansible-playbook createimage.yaml
+ansible-playbook createimage.yaml -e "ansible_python_interpreter=/usr/bin/pyton"
+ansible-playbook createimage.yaml -e "ansible_python_interpreter=/usr/bin/python"
+git clone https://github.com/mohanraz81/ansibleautomation
+ansible-playbook deployvm.yml -e "ansible_python_interpreter=/usr/bin/python"
+mv ~/.aws ~/.aws bukp
+mv ~/.aws ~/.awsbukp
+ansible-playbook deployvm.yml -e "ansible_python_interpreter=/usr/bin/python"
+cd webapp/
+git add *
+git commit -m "deploy scripts"
+git add *
+git commit -m "deploy scripts"
+ git push --set-upstream origin dev:webdev-1.0
+git add *
+git commit -m "deploy scripts"
+ git push --set-upstream origin dev:webdev-1.0
+sudo yum -y install docker
+sudo service docker start
+sudo chkconfig docker on
+sudo service docker status
+whoim
+whomi
+whoami
+sudo usermod -a -G docker ec2-user
+id -a
+docker info
+history
+docker info
+docker pull httpd:2.4
+docker images
+cd testapp/
+docker buid -t rajkumar0579/myapache:1.0 .
+docker build -t rajkumar0579/myapache:1.0 .
+cd frontend/
+docker build -t rajkumar0579/myapache:1.0 .
+docker images
+cd\
+cd environment/
+docker run --name testapache -d -p 9000:80 rajkumar0579/myapache:1.0
+curl http://localhost:9000
+docker ps -a
+docker logs testapache
+docker stop testapache; docker rm testapache
+docker run --name testapache1 -d -p 9000:80 rajkumar0579/myapache:1.1
+cd testapp/
+cd frontend/
+docker run --name testapache1 -d -p 9000:80 rajkumar0579/myapache:1.1
+docker run --name testapache1 -d -p 9000:80 rajkumar0579/myapache:1.0
+docker build -t rajkumar0579/myapache:1.1 .
+docker image
+docker images
+docker run --name testapache1 -d -p 9000:80 rajkumar0579/myapache:1.1
+docker ps -a
+curl http://localhost:9000
+cd testapp1
+cd testapp.1
+cd frontend/
+docker build -t rajkumar0579/myubuntu:1.1 .
+docker imgaes
+docker images
+docker run --name testubuntu -d -p 9000:80 rajkumar0579/:1.1
+docker run --name testubuntu -d -p 9000:80 rajkumar0579/myubuntu:1.1
+docker stop testapache1; docker rm testapache1
+docker run --name testubuntu -d -p 9000:80 rajkumar0579/myubuntu:1.1
+docker ps
+docker ps -a
+docker stop testubuntu; docker rm testubuntu
+docker run --name testubuntu -d -p 9001:80 rajkumar0579/myubuntu:1.1
+curl http://localhost:9001
+history
+curl http://localhost:9001
+docker history testubuntu
+docker history myubuntu:1.1
+docker images
+docker history e59369e3336f
+cd
+cd environment/
+docker ps
+docker ps -a
+docker stop testubuntu; docker rm testubuntu
+docker ps -a
+docker stop vigorous_euclid; docker rm vigorous_euclid
+docker ps -a
+docker run --name testapache -d -p 9000:80 -v testapache_var_log:/var/log rajkumar0579/myapache:1.0
+docker volume ls
+docker inspect testapache_var_log
+docker run --name testapache -d -p 9000:80 -v testapache_var_log:/var/log rajkumar0579/myapache:1.1
+sudo bash
+docker exec -it testapache /bin/bash
+docker run -dit --name logagent -v testapache_var_log:/testapache_var_log:ro ubuntu:18.04
+docker exec -it logagent /bin/bash
+docker run --rm -dit --name logagent -v testapache_var_log:/testapache_var_log:ro ubuntu:18.04
+docker ps -a
+docker stop testapache; docker rm testapache 
+docker volume ls
+docker ps
+docker stop logagent; docker rm logagent
+docker ps
+docker run -dit --name logagent -v /home/ec2-user:/home/ec2-user ubuntu:18.04
+docker volume ls
+docker exec -it logagent /bin/bash
+docket inspect logagent
+docker inspect logagent
+docker inspect image
+docker images
+docker inspect image 
+docker inspect image e59369e3336f
+docker login
+docker push rajkumar0579/myapache 
+dig ns student14.courseandlabs.com
+wget -O kops https://github.com/kubernetes/kops/releases/download/1.8.1/kops-linux-amd64
+chmod +x ./kops
+sudo mv ./kops /usr/local/bin/
+kops
+wget -O kubectl https://storage.googleapis.com/kubernetes-release/release/v1.8.1/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+kubectl
+aws s3api create-bucket --bucket kube-student14-courseandlabs-com  --region us-east-1
+aws s3api put-bucket-versioning --bucket kube-student14-courseandlabs-com  --versioning-configuration Status=Enabled
+echo "export NAME=kubecluster.student14.courseandlabs.com" >> ~/.bash_profile
+echo "export KOPS_STATE_STORE=s3://kube-student14-courseandlabs-com" >> ~/.bash_profile
+echo $name
+echo $NAME
+echo $KOPS_STATE_STORE
+mv ~/aws ~/.awsbup
+mv ~/.aws ~/.awsbup
+ssh-keygen
+kops create cluster     --zones=us-east-1a,us-east-1b,us-east-1c     --master-zones=us-east-1a,us-east-1b,us-east-1c     --node-count=4     --node-size=t2.small     --master-size=t2.small     --authorization RBAC     --name ${NAME} --yes
+echo $KOPS_STATE_STORE
+echo $NAME
+ssh-keygen
+kops create cluster     --zones=us-east-1a,us-east-1b,us-east-1c     --master-zones=us-east-1a,us-east-1b,us-east-1c     --node-count=4     --node-size=t2.small     --master-size=t2.small     --authorization RBAC     --name ${NAME} --yes
+kops validate cluster
+cat ~/.kube/config
+kubectl get nodes
+kubectl get namesoaces
+kubectl get namespaces
+kubectl get pods --namespace=kube-system
+kubectl describe namespace test
+kubectl create namespace test
+kubectl describe namespace test
+kubectl config set-context $(kubectl config current-context) --namespace=test
+kubectl config view | grep namespace:
+kubectl config view
+kubectl apply -f nginx.yaml
+kubectlget deployments
+kubectl get deployments
+kubectl describe deployment nginx-deployment
+kubectl get rs
+kubectl describe rs nginx-deployment-57779f9998
+kubectl get pods
+kubectl describe pod nginx-deployment-57779f9998-nkncz
+kubectl get service
+kubectl describe service testfrontend 
+curl www.student14.courseandlabs.com
+cd webapp
+docker build -t rajkumar0579
+/
+docker build -t rajkumar0579/myapache:2.0
+docker build -t rajkumar0579/myapache:2.0 .
+cdcd en
+cd
+cd environment/
+cd testapp/frontend/
+docker build -t rajkumar0579/myapache:2.0 .
+docker push rajkumar0579/myapache:2.0 .
+docker push rajkumar0579/myapache:2.0
+cd ../..
+kubectl apply -f nginx.yaml
+kubectl get rs
+kubectl delete all --all
+kubectl get rs
+git clone https://github.com/kubernetes/heapster.git
+cd heapster/
+kubectl apply -f deploy/kube-config/influxdb/
+kubectl apply -f deploy/kube-config/rbac/heapster-rbac.yaml
+kubectl get deployment --namespace=kube-system
+kubectl get services --namespace=kube-system
+cd ..
+kubectl apply -f autoscaling.yaml
+kubectl get hpa
+kubectl get deployment --namespace=kube-system
+kubectl get hpa
+kubectl get deployment --namespace=kube-system
+kubectl get hpa
+kubectl run -i --tty load-generator --image=busybox /bin/sh
+kubectl attach load-generator-58974b7bf9-44lmv -c load-generator -i -t
+git clone https://github.com/rajkumar0579/threetier.git
+cd threetier/
+git add *
+git commit -m "test"
+git push
+cd..
+cd ..
+sudo usermod -a -g docker jenkins
+sudo usermod -a -G docker jenkins
+sudo service jenkins restart
+sudo cp -R /home/ec2-user/.kube/ /var/lib/jenkins/
+sudo shown -R jenkins:jenkins /var/lib/jenkins/.kube/
+sudo chown -R jenkins:jenkins /var/lib/jenkins/.kube/
+which kubectl
+history
+ls -la
+kubectl get deployments
+kubectl delete deployment nginx-deployment
+kubectl delete deployment load-generator
+kubectl get deployments
+cd ..
+ls -la
